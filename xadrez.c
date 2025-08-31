@@ -44,20 +44,21 @@ int main() {
 
     printf("--- Movimentação da Cavalo ---\n");
 
-    for (int i = 0; i < movimentacao_cavaloBaixo; i++) {
-        printf("Baixo\n");
+    for (int i = 1; i <= movimentacao_cavaloBaixo; i++) {
+        int contador = 0;
 
-        int j = 0;
-        while (j < 0) {
-            j++;
+        while (contador < i) {
+            contador++;
         }
+
+        printf("Baixo (casa %d)\n", i);
     }
 
         int k = 0;
         while (k < movimentacao_cavaloEsquerda) {
-            printf("Esquerda\n");
+            printf("Esquerda (casa %d)\n", k + 1);
             k++;
-        }
+    }
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
     // Exemplo: Crie uma função recursiva para o movimento do Bispo.
